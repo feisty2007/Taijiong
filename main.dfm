@@ -1,8 +1,8 @@
-object Form1: TForm1
+object TaijiongFrm: TTaijiongFrm
   Left = 251
   Top = 150
   BorderStyle = bsDialog
-  Caption = #27888#22247#21488#35789#29983#25104#22120' 0.1'
+  Caption = #27888#22247#21488#35789#29983#25104#22120' 0.3'
   ClientHeight = 695
   ClientWidth = 840
   Color = clBtnFace
@@ -56,7 +56,7 @@ object Form1: TForm1
     Width = 153
     Height = 13
     AutoSize = False
-    Caption = #24494#21338'Id'#65306#25552#23376#30340#30862#30862#24565
+    Caption = #24494#21338#65306#25552#23376#30340#30862#30862#24565
   end
   object lbl5: TLabel
     Left = 472

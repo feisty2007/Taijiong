@@ -2,12 +2,12 @@ program taijiong;
 
 uses
   Forms,
-  main in 'main.pas' {Form1};
+  main in 'main.pas' {TaijiongFrm};
 
 {$R *.res}
 
 begin
   Application.Initialize;
-  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TTaijiongFrm, TaijiongFrm);
   Application.Run;
 end.

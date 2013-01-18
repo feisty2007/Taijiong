@@ -7,7 +7,7 @@ uses
   Dialogs, StdCtrls, jpeg, ExtCtrls,Clipbrd,ShellAPI;
 
 type
-  TForm1 = class(TForm)
+  TTaijiongFrm = class(TForm)
     pnl1: TPanel;
     img1: TImage;
     lbl1: TLabel;
@@ -38,13 +38,13 @@ type
   end;
 
 var
-  Form1: TForm1;
+  TaijiongFrm: TTaijiongFrm;
 
 implementation
 
 {$R *.dfm}
 
-procedure TForm1.btn1Click(Sender: TObject);
+procedure TTaijiongFrm.btn1Click(Sender: TObject);
 begin
 
   if not verifyInput then
@@ -57,7 +57,7 @@ begin
   lbl_ThirdLine.Caption := edt_thirdLine.Text;
 end;
 
-procedure TForm1.btn2Click(Sender: TObject);
+procedure TTaijiongFrm.btn2Click(Sender: TObject);
 var
   iwidth,iheight:integer;
   bmp:TBitmap;
@@ -84,7 +84,7 @@ begin
   jpg.Free;
 end;
 
-function TForm1.verifyInput: Boolean;
+function TTaijiongFrm.verifyInput: Boolean;
 begin
   Result := true;
 
@@ -94,7 +94,7 @@ begin
   end;
 end;
 
-procedure TForm1.btn3Click(Sender: TObject);
+procedure TTaijiongFrm.btn3Click(Sender: TObject);
 var
   iwidth,iheight:integer;
   bmp:TBitmap;
@@ -124,7 +124,7 @@ begin
 
 end;
 
-procedure TForm1.lbl4Click(Sender: TObject);
+procedure TTaijiongFrm.lbl4Click(Sender: TObject);
 begin
   ShellExecute(handle,'open','mailto:camark@sina.cn',nil,nil,SW_NORMAL);
 end;
